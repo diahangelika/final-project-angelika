@@ -1,0 +1,104 @@
+.hero-section {
+  position: relative;
+}
+
+.hero-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+/*/////////////////////////////////////////////////////////////////////////////*/
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+.product-card {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.see-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.see-all .btn {
+  margin-top: 20px; /* Adjust this to vertically align with product cards */
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+.footer {
+  background-color: palevioletred;
+  color: white;
+  padding: 40px 0;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+.footer a:hover {
+  color: #ddd;
+}
+.social-icons i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: white;
+}
+.social-icons a:hover i {
+  color: #ddd;
+}
+.footer-bottom {
+  border-top: 1px solid #004d4d;
+  padding-top: 10px;
+  margin-top: 20px;
+  text-align: center;
+  color: #ccc;
+}
+/*///////////////////////////////////////////////////////////////////////////*/
+.img-screen-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  /* border: 2px solid black; */
+  /* min-height: 300px; */
+}
+
+.img-preview-1{
+  grid-column: span 2/ span 2;
+  grid-row: span 2/ span 2;
+  /* border: 2px solid black; */
+}
+
+.img-preview-2,
+.img-preview-3,
+.img-preview-4,
+.img-preview-5{
+  grid-column: span 1/ span 1;
+  grid-row: span 1/ span 1;
+  /* border: 2px solid black; */
+}
+
+.image-detail1{
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
+  object-position: 0px 0px;
+}
+.image-detail{
+  height: 245px;
+  width: 200px;
+  object-fit: cover;
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+.title-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
