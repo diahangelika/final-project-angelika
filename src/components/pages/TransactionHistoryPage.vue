@@ -46,10 +46,6 @@ function formatRupiah(price) {
   return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(price);
 }
 
-// function buyAgain() {
-//   store.dispatch('cart/addToCart', historyItems2.items.id);
-//   router.push('/cart');
-// }
 function buyAgain(transaction) {
   transaction.items.forEach(product => {
     store.dispatch('cart/addToCart', product);

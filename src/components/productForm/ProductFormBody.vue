@@ -3,7 +3,7 @@
 
   <li class="list-group-item">
     <form @submit.prevent="addNewProduct">
-      <!-- General Information Start -->
+
       <div>
         <p class="my-3 fs-5 fw-semibold">General Information</p>
         <div>
@@ -87,7 +87,7 @@
           </div>
         </div>
       </div>
-      <!-- General Information End -->
+
           <div class="mb-3">
             <base-input
               type="number"
@@ -127,7 +127,7 @@
           </div>
 
 
-      <!-- Form Button Start -->
+   
       <div class="border-top py-3 d-flex my-4 justify-content-end">
         <base-button class="cancel-btn px-3 py-2 ms-1">
           Cancel<!-- 12 -->
@@ -137,7 +137,7 @@
           {{ isEdit ? "Update Data" : "Tambah Data" }}
         </base-button>
       </div>
-      <!-- Form Button End -->
+
     </form>
   </li>
 </template>

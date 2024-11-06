@@ -1,7 +1,6 @@
 <template>
   <div class="change-password-container">
     <form @submit.prevent="submitChangePassword">
-      <!-- Old Password -->
       <base-input
         v-model="form.oldPassword"
         type="password"
@@ -10,7 +9,6 @@
         :error="errors.oldPassword"
       />
       
-      <!-- New Password -->
       <base-input
         v-model="form.newPassword"
         type="password"
@@ -19,7 +17,6 @@
         :error="errors.newPassword"
       />
       
-      <!-- Confirm New Password -->
       <base-input
         v-model="form.confirmPassword"
         type="password"

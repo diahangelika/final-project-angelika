@@ -94,16 +94,7 @@ const userData = reactive({
   imageLink: "",
 });
 
-// watchEffect(() => { GAK PAKE WATCH EFFECT SOALNYA KAN GA ADA YANG HARUS DI "WATCH" BRO
-//   const valueEditProfile = store.state.auth.userLogin;
-//   if (valueEditProfile) {
-//     userData.username = valueEditProfile.username || "";
-//     userData.fullname = valueEditProfile.fullname || "";
-//     userData.email = valueEditProfile.email || "";
-//   }
-// });
 
-// console.log(userData);
 
 onMounted(() => {
   if (props.isEdit) {
