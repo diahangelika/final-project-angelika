@@ -48,14 +48,12 @@ watch(() => route.query.brand, (newBrandQuery) => {
 const filteredProducts = computed(() => {
   let products = popularProductList.value;
 
-  // Filter by search query
   if (searchQuery.value) {
     products = products.filter(product =>
       product.title.toLowerCase().includes(searchQuery.value.toLowerCase())
     );
   }
 
-  // Filter by brand query
   if (brandQuery.value) {
     products = products.filter(product =>
       product.brand === brandQuery.value
